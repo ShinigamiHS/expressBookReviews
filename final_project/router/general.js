@@ -62,7 +62,6 @@ public_users.get('/author/:author', function (req, res) {
 
   const authorPromise = new Promise((resolve, reject) => {
     if (JSON.stringify(answerArray).length === 2) {
-      console.log("nope");
       resolve(res.send(`Author ${author} not found`));
     }
     else {
